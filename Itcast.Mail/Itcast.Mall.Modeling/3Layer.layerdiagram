@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<layerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="395b7d00-c767-4643-9af3-84293f63c984" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/LayerDesigner">
+  <layers>
+    <layer Id="32f9ae8f-8216-40b6-9f33-58bc4334dd1a" name="Database" />
+    <layer Id="b3f8cf89-6641-4f5d-900b-bf82a78fb379" name="Model" />
+    <layer Id="7672f874-e8d2-4b24-803a-ab53caf60ad4" name="Utility" />
+    <layer Id="3a0ef906-84ab-48b5-baec-f51470fb5e96" name="DAL">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="62281f2b-6e58-4e86-b774-82c60febddb2" direction="Forward">
+          <layerMoniker Id="32f9ae8f-8216-40b6-9f33-58bc4334dd1a" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="e3d0673e-1780-43b3-9ba8-e9441b976d35" direction="Forward">
+          <layerMoniker Id="b3f8cf89-6641-4f5d-900b-bf82a78fb379" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="299faec2-fdd4-42f2-8ec9-d2f91a0a4ecc" direction="Forward">
+          <layerMoniker Id="7672f874-e8d2-4b24-803a-ab53caf60ad4" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+    </layer>
+    <layer Id="dbe08ccc-5f12-4e82-8e10-699212c67412" name="BLL">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="4d8611d0-ae5e-4869-b8e3-fb30ed4c8554" direction="Forward">
+          <layerMoniker Id="3a0ef906-84ab-48b5-baec-f51470fb5e96" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="58df02ae-31c1-44dc-9bf4-1d5c9f084cce" direction="Forward">
+          <layerMoniker Id="b3f8cf89-6641-4f5d-900b-bf82a78fb379" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="503002a3-c4f5-4963-ade0-d577c5ec374c" direction="Forward">
+          <layerMoniker Id="7672f874-e8d2-4b24-803a-ab53caf60ad4" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+    </layer>
+    <layer Id="14f3ccda-496f-4f45-8dfb-0b1cc59a518b" name="UI">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="2dd2bc32-4ef9-4ac2-b5ee-368fc4bc4273" direction="Forward">
+          <layerMoniker Id="dbe08ccc-5f12-4e82-8e10-699212c67412" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="00f558d7-8ed1-4562-a148-49c0aceca342" direction="Forward">
+          <layerMoniker Id="7672f874-e8d2-4b24-803a-ab53caf60ad4" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="1691b2e9-a8be-4224-9cbb-52e82e8a677a" direction="Forward">
+          <layerMoniker Id="b3f8cf89-6641-4f5d-900b-bf82a78fb379" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <childLayers>
+        <layer Id="ed96d37c-a1ee-488f-949a-fb2092a5b03b" name="Winform" />
+        <layer Id="6f47e26f-9752-46c4-a928-f16e8b440d6b" name="WebForm" />
+      </childLayers>
+    </layer>
+    <layer Id="0b480824-60f0-4f30-ad5a-d5cdbbcfb37a" name="APP" />
+  </layers>
+</layerModel>
